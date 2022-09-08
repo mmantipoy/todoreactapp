@@ -1,0 +1,16 @@
+
+
+.fl-r{
+
+    float: right;
+}
+
+.fl-l{
+
+    float: left;
+}
+
+.element__inline{
+
+    display: inline-block;
+}

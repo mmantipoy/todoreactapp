@@ -1,0 +1,40 @@
+
+
+.todoInterface{
+
+    margin: auto;
+    box-shadow: 0 0 2px black;
+    width: 600px;
+    height: 200px;
+    margin-top: 4px;
+}
+
+.todoInterface__filterbuttons{
+
+    border-top: 1px solid black;
+    width: 95%;
+    margin: auto;
+}
+
+.todoInterface__filterbuttons_button{
+
+    margin: 10px 0 0 10px ;
+    border-radius: 15px;
+    width: 100px ;
+    height: 30px;
+    border: none;
+    color: black;
+    background-color: rgb(255, 100, 100);
+}
+
+.todoInterface__filterbuttons_button:focus{
+
+    background-color: #00a0a0;
+    color: rgb(255, 100, 100);
+}
+
+.todoInterface__filterbuttons_button:hover{
+
+    background-color: #017575;
+    color: rgb(255, 100, 100);
+}
