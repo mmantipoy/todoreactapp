@@ -1,0 +1,22 @@
+
+.todoInterface_form{
+    margin: auto;
+    width: 95%;
+    text-align:center;
+    border-bottom: 1px solid black;
+}
+.todoInterface__input_create{
+
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    height: 50px;
+    box-shadow: 0px 0px 4px black;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    
+    
+}

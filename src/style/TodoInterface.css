@@ -3,17 +3,22 @@
 .todoInterface{
 
     margin: auto;
-    box-shadow: 0 0 2px black;
-    width: 600px;
-    height: 200px;
-    margin-top: 4px;
+    /* box-shadow: 0 0 2px black; */
+    border: var(--border-smal-solid) var(--color-theme-gray);
+    width: var(--block-width-x);
+    min-height: 200px;
+    max-height: 1000px;
+
+    /* margin-top: 4px; */
 }
 
 .todoInterface__filterbuttons{
-
-    border-top: 1px solid black;
+    
+    border-top: var(--border-smal-solid) black;
     width: 95%;
     margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .todoInterface__filterbuttons_button{
@@ -24,17 +29,41 @@
     height: 30px;
     border: none;
     color: black;
-    background-color: rgb(255, 100, 100);
+    background-color: var( --color-theme-red  );
+    
+
+    /* float: var(--element-float-rigth); */
 }
 
 .todoInterface__filterbuttons_button:focus{
 
-    background-color: #00a0a0;
-    color: rgb(255, 100, 100);
+    background-color: var( --color-theme-green  );
+    color: var( --color-theme-red  );
 }
 
 .todoInterface__filterbuttons_button:hover{
 
-    background-color: #017575;
-    color: rgb(255, 100, 100);
+    background-color: var( --color-theme-darkgreen  );
+    
+    color: var( --color-theme-red  );
+}
+
+.beautyPages {
+
+    width: var(--block-second-width-x);
+    height: 10px;
+    margin: auto;
+    margin-top: 0px;
+    border: var(--border-smal-solid) var(--color-theme-gray);
+    border-top: none;
+}
+
+.beautyPages_ {
+
+    width: var(--block-third-width-x);
+    height: 10px;
+    margin: auto;
+    margin-top: 0px;
+    border: var(--border-smal-solid) var(--color-theme-gray);
+    border-top: none;
 }

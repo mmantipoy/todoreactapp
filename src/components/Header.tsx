@@ -3,10 +3,14 @@ import React from "react";
 
 import mainLogo from '../assets/pen-solid.svg';
 import infoLogo from '../assets/circle-question-regular.svg';
+import plus from '../assets/plus-solid.svg';
 import '../style/Header.css'
+
+
 
 export function Header(){
 
+    
 
     return (
         <>
@@ -26,10 +30,15 @@ export function Header(){
                 </p>
 
                 <button className="header__button element__inline fl-r"> 
-
-                <object className="header__butten_logo" data={infoLogo} type="image/svg+xml" >
+                <button className="header__button_info"   >
+                    ?
+                </button>
+                {/* <object className="header__button_logo" data={infoLogo} type="image/svg+xml" >
                     Error
-                </object>
+                </object> */}
+                <button className="header__button_add"  >
+                    +
+                </button>
                 </button>
             </div>
         </>

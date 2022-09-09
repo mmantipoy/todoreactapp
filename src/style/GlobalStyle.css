@@ -1,4 +1,39 @@
+html{
 
+    
+}
+
+p{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+:root{
+
+    --element-float-rigth: right;
+    --element-float-left: left;
+
+    --element-display-inlineB: inline-block;
+
+    /* Colors */
+
+    --color-theme-red: rgb(255, 100, 100);
+    --color-theme-green:  #00a0a0;
+    --color-theme-darkgreen: #017575;
+    --color-theme-gray:rgb(128, 128, 128);
+
+    /* Border */
+
+    --border-smal-solid: 1px solid;
+
+    /* Block  */
+
+    --block-width-x: 650px;
+    --block-second-width-x: 600px;
+    --block-third-width-x: 550px;
+}
 
 .fl-r{
 
@@ -12,5 +47,5 @@
 
 .element__inline{
 
-    display: inline-block;
+    display: inline;
 }
