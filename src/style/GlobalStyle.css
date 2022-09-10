@@ -1,5 +1,5 @@
 html{
-
+    background-color: lightgoldenrodyellow;
     
 }
 
@@ -31,8 +31,8 @@ p{
     /* Block  */
 
     --block-width-x: 650px;
-    --block-second-width-x: 600px;
-    --block-third-width-x: 550px;
+    --block-second-width-x: 630px;
+    --block-third-width-x: 610px;
 }
 
 .fl-r{
@@ -48,4 +48,9 @@ p{
 .element__inline{
 
     display: inline;
+}
+
+.bg-error{
+    background-color: var(--color-theme-red);
+    color: white
 }

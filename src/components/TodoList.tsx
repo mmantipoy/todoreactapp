@@ -4,18 +4,19 @@ import { TodoItemF } from "./TodoItem";
 
 export interface TodoListProps{
 
-    list: TodoItem[];
-    filter: string
+    list: TodoItem[],
+    filter: string,
+    onDelete: (item: TodoItem) => void
 }
 
-export function TodoList ( {list, filter}: TodoListProps){
+export function TodoList ( {list, filter, onDelete}: TodoListProps){
 
-    // console.log(list);
+    console.log(list);
     return (
 
         <>  
 
-            { list.map( todo => <TodoItemF todo={ todo } key={ todo.id} filter={filter}/>)}
+            { list.map( todo => <TodoItemF todo={ todo } key={ todo.id} filter={filter} onDelete={onDelete}/>)}
 
         
         </>

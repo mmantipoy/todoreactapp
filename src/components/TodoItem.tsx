@@ -4,16 +4,18 @@ import {TodoItem} from "../model"
 import checkCircle from '../assets/circle-check-regular.svg';
 import circle from '../assets/circle-regular.svg';
 import '../style/TodoItem.css'
+import { ReactComponent as IconMenu } from '../assets/trash-solid.svg'
 
 interface TodoItemProps{
 
     todo: TodoItem;
     filter: string;
+    onDelete: (item: TodoItem) => void;
 }
 
 
 
-export function TodoItemF(  {todo, filter} :TodoItemProps ){  
+export function TodoItemF(  {todo, filter, onDelete} :TodoItemProps ){  
 
     const [flag, setFlag] = useState(todo.state)
     const [draw, setDraw] = useState(filter)
@@ -36,7 +38,11 @@ export function TodoItemF(  {todo, filter} :TodoItemProps ){
                 break;
 
         }
+        function deleteHandler(){
+            
+            onDelete(todo)
 
+        }
         // if (filter === 'ALL') ss = 2; else 
         // if ( filter === 'COMPLITED') ss = 1; else 
         // if ( filter === 'ACTIVE') ss = 0;
@@ -54,10 +60,17 @@ export function TodoItemF(  {todo, filter} :TodoItemProps ){
 
                 {!flag && <span className="item__text">
                     {todo.text}
-                </span>}
+                </span>
+                }
                 {flag && <span className="item__text line-through">
                     {todo.text}
-            </span>}
+                </span>
+                }
+                <button className="item__button_delete" onClick={deleteHandler}>
+
+                    <IconMenu width="15px"  />
+                </button>
+
             </div>
             )
         } else {return (

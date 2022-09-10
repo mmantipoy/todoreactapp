@@ -7,7 +7,6 @@ import plus from '../assets/plus-solid.svg';
 import '../style/Header.css'
 
 
-
 export function Header(){
 
     
@@ -17,8 +16,8 @@ export function Header(){
             <div className="header"> 
                 
                 {/* <Icon Isrc={ '/src/componnents/paintbrush-solid.svg' } /> */}
-                {/* <img src={logo} className="App-logo" alt="logo" height={20}/> */}
-
+                {/* <img src={'../assets/plus-solid.svg'} className="App-logo"/> */}
+                
 
                 <object className="header__logo element__inline" data={mainLogo} type="image/svg+xml" height={40} width={40}>
                     Error

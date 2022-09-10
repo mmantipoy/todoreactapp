@@ -2,7 +2,7 @@ import { TodoListProps } from "../components/TodoList";
 import { TodoItem } from "../model";
 
 
-export const  date: TodoItem[] = [
+export const  dates: TodoItem[] = [
 
     {   id: 1,
         text:  'string',

@@ -9,9 +9,19 @@
     min-height: 200px;
     max-height: 1000px;
 
-    /* margin-top: 4px; */
+    /* margin-top: 12px; */
 }
+.todoInterface__placeholder{
 
+    width: 90%;
+    /* border: var(--border-smal-solid) var(--color-theme-gray); */
+    /* background-color: white; */
+    margin: auto;
+    margin-top: 10px;
+    font-size: 32px;
+    text-align: center;
+    font-style: italic;
+}
 .todoInterface__filterbuttons{
     
     border-top: var(--border-smal-solid) black;
@@ -19,6 +29,7 @@
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
+    
 }
 
 .todoInterface__filterbuttons_button{
