@@ -1,6 +1,6 @@
 html{
     background-color: lightgoldenrodyellow;
-    
+    outline: none;
 }
 
 p{
@@ -18,8 +18,10 @@ p{
     --element-display-inlineB: inline-block;
 
     /* Colors */
-
+    /* background-color: lightyellow; */
     --color-theme-red: rgb(255, 100, 100);
+    --color-theme-bg: white;
+    --color-theme-second-bg: lightgoldenrodyellow;
     --color-theme-green:  #00a0a0;
     --color-theme-darkgreen: #017575;
     --color-theme-gray:rgb(128, 128, 128);

@@ -2,26 +2,30 @@ import React, { useState } from 'react';
 import { TodoItem } from '../model';
 import '../style/ItemCreation.css'
 import { ReactComponent as IconMenu } from '../assets/broom-solid.svg'
+import { dates  } from "../data/items";
+
 
 interface ItemCreationProps{
 
     onCreate: (item: TodoItem) => void;
+    data: TodoItem[];
 }
 
-export function ItemCreation({onCreate}: ItemCreationProps){  
+export function ItemCreation({onCreate, data}: ItemCreationProps){  
 
     const [value, setValue] = useState('')
     const [error, setError] = useState('')
 
     function submitHendler(e: React.FormEvent<HTMLFormElement>){
-
+        
         e.preventDefault();
         let new_ = { 
-            id: 7,
+            id: 0,
             text:  value,
             state: false,
         }
-        
+
+        data.length === 0 ? new_.id = 1 : new_.id = data[data.length - 1].id + 1
         if (value.trim().length === 0){
 
             setError('Incorrect length')
@@ -33,7 +37,7 @@ export function ItemCreation({onCreate}: ItemCreationProps){
             return
         } else  onCreate(new_)
         
-        
+        dates.push(new_)
         setValue('')
     
     }
@@ -73,7 +77,7 @@ export function ItemCreation({onCreate}: ItemCreationProps){
             <input type="text" id='todoInterface__input' className='todoInterface__input_create' 
             placeholder='WRITE YOUR THING and ENTER' 
             autoFocus 
-            maxLength={40} 
+            maxLength={25} 
             value={value} 
             onChange={(e) => changeHandler(e)}>
             

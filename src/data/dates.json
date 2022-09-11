@@ -1,0 +1,21 @@
+
+
+[
+
+    {   "id": 1,
+        "text":  "string",
+        "state": false
+    },
+
+
+    {   "id": 2,
+        "text":  "afafaf",
+        "state": false
+    },
+
+    {   "id": 3,
+        "text":  "afafaf",
+        "state": false
+    }
+
+]

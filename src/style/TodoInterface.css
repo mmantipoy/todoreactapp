@@ -5,9 +5,12 @@
     margin: auto;
     /* box-shadow: 0 0 2px black; */
     border: var(--border-smal-solid) var(--color-theme-gray);
+    border-top: none;
     width: var(--block-width-x);
     min-height: 200px;
-    max-height: 1000px;
+    /* max-height: 800px; */
+    /* overflow-y: hidden; */
+    background-color: var(--color-theme-bg);
 
     /* margin-top: 12px; */
 }
@@ -21,6 +24,14 @@
     font-size: 32px;
     text-align: center;
     font-style: italic;
+    
+    
+}
+
+.todoInterface__filterbuttons_{
+
+    width: 340px;
+    margin: auto;
 }
 .todoInterface__filterbuttons{
     
@@ -40,7 +51,7 @@
     height: 30px;
     border: none;
     color: black;
-    background-color: var( --color-theme-red  );
+    background-color: var( --color-theme-second-bg  );
     
 
     /* float: var(--element-float-rigth); */
@@ -59,6 +70,12 @@
     color: var( --color-theme-red  );
 }
 
+.todoInterface__filterbuttons_button_sel{
+
+    background-color: var( --color-theme-green  );
+    color: var( --color-theme-red  );
+}
+
 .beautyPages {
 
     width: var(--block-second-width-x);
@@ -67,6 +84,7 @@
     margin-top: 0px;
     border: var(--border-smal-solid) var(--color-theme-gray);
     border-top: none;
+    background-color: var(--color-theme-bg);
 }
 
 .beautyPages_ {
@@ -77,4 +95,5 @@
     margin-top: 0px;
     border: var(--border-smal-solid) var(--color-theme-gray);
     border-top: none;
+    background-color: var(--color-theme-bg);
 }

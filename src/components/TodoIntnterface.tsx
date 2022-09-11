@@ -7,6 +7,8 @@ import '../style/TodoInterface.css'
 import { TodoList, TodoListProps } from "./TodoList";
 import { dates  } from "../data/items";
 import { ItemCreation } from "./ItemCreation";
+import dataa from "../data/dates.json";
+
 
 type todoFilter = 'ALL' | 'COMPLITED' | 'ACTIVE'
 
@@ -16,12 +18,17 @@ export function TodoInterface(){
     
     const [filter, setFilter] =  useState<todoFilter>( 'ALL' )
 
-    const [data, setData] = useState<TodoItem[]>( dates )
+    const [data, setData] = useState<TodoItem[]>( dataa.sort() )
     
 
     function addItem (item: TodoItem){
 
         setData(prev => [...prev, item])
+
+        // console.log('FFF')
+        // let d = JSON.stringify(item)
+        // const fs = require('fs');
+        // fs.writeFile('../data/dates.json', d);
     }
 
     function deleteItem (item: TodoItem){
@@ -30,7 +37,7 @@ export function TodoInterface(){
     }
     function renderFilterButtons(){
 
-        let but:todoFilter[] = ['COMPLITED','ACTIVE','ALL']
+        let but:todoFilter[] = ['ALL','ACTIVE','COMPLITED']
         return (
             <>  
                 { but.map( sta => renderFilterButton(sta)) }
@@ -45,11 +52,20 @@ export function TodoInterface(){
     function renderFilterButton(text: todoFilter){
 
         return(
-            <button className="todoInterface__filterbuttons_button  .element__inline" onClick = { () => setFilter(text)} >
+            <button id={text + '_button'} className="todoInterface__filterbuttons_button  .element__inline" onClick = { () => selectFilter(text, text + '_button', filter)} >
                     {text}
             </button>
 
         )
+    }
+
+    function selectFilter(text: todoFilter, id: string, prev: todoFilter ){
+
+        setFilter(text);
+        document.getElementById(id)?.classList.add('todoInterface__filterbuttons_button_sel')
+
+        document.getElementById(prev + '_button')?.classList.remove('todoInterface__filterbuttons_button_sel')
+
     }
 
     function renderItemCreation(data: TodoItem[]){
@@ -57,7 +73,7 @@ export function TodoInterface(){
         return (
 
             <>
-                <ItemCreation onCreate={addItem}/>
+                <ItemCreation onCreate={addItem} data={data}/>
             </>
         )
     }
@@ -107,9 +123,9 @@ export function TodoInterface(){
                 {data.length === 0 && rederPlaceHolder()}
                 
                 <div className="todoInterface__filterbuttons">
-
+                    <div className="todoInterface__filterbuttons_">
                     {renderFilterButtons()}
-
+                    </div>
                     
                     
                 </div>

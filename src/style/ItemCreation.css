@@ -17,11 +17,12 @@
     outline: none;
     border: none;
     font-size: 20px;
+    background-color: var(--color-theme-second-bg);
     
 }
 
 .todoInterface_clean{
-    background-color: var(--color-theme-red);
+    background-color: var(--color-theme-second-bg);
     border-radius: 8px;
     height: 35px;
     width: 35px;

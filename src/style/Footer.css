@@ -1,0 +1,19 @@
+
+.footer {
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 20px;
+    width: var(--block-width-x);
+
+}
+
+.footer__text{
+
+    text-align: center;
+    font-size: 16px;
+    color: gray;
+}
+
+.footer__text_href{
+    color: blue;
+}

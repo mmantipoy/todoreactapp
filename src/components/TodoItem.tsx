@@ -58,13 +58,13 @@ export function TodoItemF(  {todo, filter, onDelete} :TodoItemProps ){
                     
                 </button>
 
-                {!flag && <span className="item__text">
-                    {todo.text}
-                </span>
+                {!flag && <p className="item__text">
+                    {todo.text} 
+                </p>
                 }
-                {flag && <span className="item__text line-through">
-                    {todo.text}
-                </span>
+                {flag && <p className="item__text line-through">
+                    {todo.text} 
+                </p>
                 }
                 <button className="item__button_delete" onClick={deleteHandler}>
 

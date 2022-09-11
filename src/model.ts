@@ -1,7 +1,7 @@
 
 
 export interface TodoItem {
-    id?: number;
+    id: number;
     text: string;
     state: boolean;
 
