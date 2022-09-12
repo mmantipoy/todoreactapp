@@ -42,3 +42,27 @@
     border: none;
     box-shadow: 0 0 2px gray;
 }
+
+
+@media screen and (max-width: 850px) {
+
+
+    
+    .todoInterface__input_create{
+
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            width: 80%;
+            height: 50px;
+            box-shadow: 0px 0px 4px black;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+            font-size: 16px;
+            background-color: var(--color-theme-second-bg);
+            
+        }
+        
+    
+}

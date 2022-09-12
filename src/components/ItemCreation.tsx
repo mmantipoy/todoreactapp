@@ -77,7 +77,7 @@ export function ItemCreation({onCreate, data}: ItemCreationProps){
             <input type="text" id='todoInterface__input' className='todoInterface__input_create' 
             placeholder='WRITE YOUR THING and ENTER' 
             autoFocus 
-            maxLength={25} 
+            maxLength={40} 
             value={value} 
             onChange={(e) => changeHandler(e)}>
             

@@ -1,6 +1,6 @@
 html{
     background-color: lightgoldenrodyellow;
-    outline: none;
+    /* outline: none; */
 }
 
 p{
@@ -35,6 +35,12 @@ p{
     --block-width-x: 650px;
     --block-second-width-x: 630px;
     --block-third-width-x: 610px;
+
+    /* Small Block */
+
+    --block-width-x-small: 350px;
+    --block-second-width-x-small: 330px;
+    --block-third-width-x-small: 310px;
 }
 
 .fl-r{
@@ -56,3 +62,4 @@ p{
     background-color: var(--color-theme-red);
     color: white
 }
+

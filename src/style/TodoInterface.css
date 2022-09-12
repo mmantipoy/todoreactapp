@@ -97,3 +97,28 @@
     border-top: none;
     background-color: var(--color-theme-bg);
 }
+
+
+
+@media screen and (max-width: 850px) {
+
+    .todoInterface{
+
+    
+        width: var(--block-width-x-small);
+        
+    }
+
+    .beautyPages {
+
+        width: var(--block-second-width-x-small);
+        
+    }
+
+    .beautyPages_ {
+
+        width: var(--block-third-width-x-small);
+        
+    }
+    
+}

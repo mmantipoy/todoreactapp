@@ -6,6 +6,7 @@ import infoLogo from '../assets/circle-question-regular.svg';
 import plus from '../assets/plus-solid.svg';
 import '../style/Header.css'
 import { ReactComponent as IconMenu } from '../assets/circle-question-regular.svg'
+import { ReactComponent as IconHeader } from '../assets/pen-solid.svg'
 
 interface HeaderProps {
 
@@ -26,11 +27,13 @@ export function Header({onClick}:HeaderProps){
                 
                 {/* <Icon Isrc={ '/src/componnents/paintbrush-solid.svg' } /> */}
                 {/* <img src={'../assets/plus-solid.svg'} className="App-logo"/> */}
+                <div  className="element__inline">
+                    <IconHeader className="IconHeader" />
+                </div>
                 
-
-                <object className="header__logo element__inline" data={mainLogo} type="image/svg+xml" height={40} width={40}>
+                {/* <object className="header__logo element__inline" data={mainLogo} type="image/svg+xml" height={40} width={40}>
                     Error
-                </object>
+                </object> */}
 
                 
                 <p className="header__text element__inline"> 
@@ -51,7 +54,7 @@ export function Header({onClick}:HeaderProps){
 
                 <button className='header__button element__inline fl-r' onClick={renderInfoInnterface}>
                 
-                    <IconMenu width="35px" />
+                    <IconMenu className="IconButton" />
                 </button>
             </div>
         </>

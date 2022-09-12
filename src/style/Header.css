@@ -9,19 +9,8 @@
     border-radius: 0 0 12px 12px;
     background-color: var(--color-theme-bg);
     border: 1px solid black;
+    border-top: none;
     
-    
-}
-
-.header__logo{
-
-    margin: 10px 0 0 10px;
-    
-}
-
-.header__button_logo{
-
-    margin: 4px
 }
 
 
@@ -29,6 +18,7 @@
 
     font-size: 32px;
     margin: 10px 0 0 10px;
+    
 }
 
 .header__button{
@@ -42,7 +32,50 @@
     border-radius: 20px;
     
 }
+.IconHeader{
+    width: 35px;
+    margin: 10px 0 0 10px;
+    
+}
+.IconButton{
+    width: 35px;
+}
+@media screen and (max-width: 850px) {
 
+    .header {
+        margin: auto;
+        /* box-shadow: 0px 0px 2px black; */
+        width: 380px;
+        
+    }
+
+    .header__text{
+
+        font-size: 20px;
+        margin: 4px 0 8px 4px;
+    }
+
+    .header__button{
+
+        margin: 4px 4px 0 0 ;
+        border-radius: 20px;
+        width: 20px;
+        height: 20px;
+        
+    }
+
+    .IconHeader{
+        width: 20px;
+        margin: 4px 0 0 4px;
+        
+    }
+    .IconButton{
+        width: 20px;
+        
+    }
+    
+
+}
 
 
 
